@@ -59,3 +59,32 @@ async function createFilm() {
         body: JSON.stringify(newFilm),
     });
 }
+
+
+
+// La función editarUsuario permite al usuario editar la información de un usuario existente.
+async function editFilm(id) {
+    // Se solicita al usuario ingresar la nueva información para el usuario.
+    const newFilm = prompt('Ingrese el nuevo nombre:');
+    const newDirector = prompt('Ingrese la nueva edad:');
+
+    // Se realiza una solicitud PUT a la API para actualizar la información del usuario.
+    const response = await fetch(`http://localhost:3000/films/${id}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            film: newFilm,
+            director: newDirector
+        }),
+    });
+
+    // Si la solicitud es exitosa, se recargan los datos para reflejar el cambio en la tabla.
+    if (response.ok) {
+        cargarDatos();
+    } else {
+        // En caso de error, se muestra un mensaje en la consola.
+        console.error('Error al editar usuario.');
+    }
+}
