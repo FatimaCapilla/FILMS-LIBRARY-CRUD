@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="films-form">
+        <label for="new-film">Film</label><input id="new-film" type="text">
+        <br>
+        <label for="new-director">Director</label><input id="new-director" type="text">
+        <button type="submit" onclick="createFilm()">To add</button>
+    </form>
+    <!--<button onclick="printFilms()">View films</button>-->
+    <button onclick="postFilm()">+</button>
+    <section id="film-list">
+    </section>
+    <script src="/src/service.js"></script>
+</body>
+</html>
