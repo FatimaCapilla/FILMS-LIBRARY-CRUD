@@ -1,25 +1,35 @@
 *{
     align-items: center;
 }
+
 h1, h3 {
     font-family: 'Bebas Neue', sans-serif;
     color: #8048B9;
 }
+
 h1{
     font-size: 5em;
 }
+
 h3 {
     font-size: 1.6em;
+    margin-bottom: 1%;
 }
+
+.film-list p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
 .line {
     width: 20em;
+    border: solid 0.09em;
     border-color: #ff9215;
 }
+
 .films-form {
     display: flex;
     flex-direction: column;
-    /* margin-left: 20%; */
-    font-family: 'Roboto', sans-serif;
     color: #ff9215;
 }
 
@@ -30,17 +40,17 @@ h3 {
     padding-top: 1em; 
     padding-bottom: 1em; 
     background-color: #8048B9;
-    /* margin-top: 5%;
-    margin-bottom: 8%; */
     border-radius: 2em;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 20px #e47c05;
 }
 
 .form-label {
+    font-family: 'Roboto', sans-serif;
     color: #ff9215;
     display: flex;
-    font-weight: bold;
-    margin-top: 3%;
+    font-weight: 750;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
 }
 
 .form-input {
@@ -53,48 +63,73 @@ h3 {
 
 .form-button {
     font-size: 15px;
+    font-weight: bold;
     margin-top: 3%;
     padding: 2%;
-    background-color: #ff9215;
+    background-color: #e47c05;
     color: #fff;
-    border-color: #ff9215;
+    border: none;
     border-radius: 0.5em;
     cursor: pointer;
-    box-shadow: 0 0 10px;
-   margin-left: 65%;
+    box-shadow: 0 0 10px #ffd129;
+    margin-left: 65%;
 }
 
 .form-button:hover {
-    background-color: #d2770e;
+    background-color: #ff9215;
     color: #fff;
+    box-shadow: 0 0 20px #ff8902;
 }
+
 ::placeholder {
-    color: #ff9215ad;
+    color: #8048b98b;
 }
+
 .film-list {
+    border: 1px solid #b27ce9;
+    border-radius: 2em;
+    margin: 3%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
-    /* max-width: 30em; */
     text-align: center;
+    box-shadow: 0 0 20px #7b41b6;
 }
 
 .film-button button {
+    font-weight: bold;
     background-color: #8048B9;
     color: #fff;
     font-size: 15px;
-    width: 5.5em;
-    padding: 1.5%;
-    margin: 0.5%;
+    width: 5em;
+    padding: 2%;
+    margin-bottom: 5%;
     border-radius: 0.5em;
     border: none;
+    box-shadow: 0 0 5px #8048B9;
 }
 
 .film-button button:hover {
     background-color: #ff9215;
-    color: #fff;
+    color: #8048B9;
     cursor: pointer;
 }
 
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 2px;
+    text-align: center;
+    width: 60%;
+    margin-top: 3%;
+    padding: 0.5%;
+    color: #8048B9;
+    border-top: 1px solid #8048B9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 /* Morado: #8048B9
 Naranja: #F48605

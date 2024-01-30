@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles.css">
-    <title>Document</title>
+    <title>Films Library</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -12,16 +12,22 @@
 <body class="films-form">
     <h1>MY FILMS</h1>
     <form class="form-group" id="films-form">
-        <label class="form-label" for="new-film">Film</label><input placeholder="write the film..."  class="form-input" id="new-film" type="text">
+        <label class="form-label" for="new-film">FILM</label><input placeholder="write the film..."  class="form-input" id="new-film" type="text">
         <br>
-        <label class="form-label" for="new-director">Director</label><input placeholder="write the director..." class="form-input" id="new-director" type="text">
-        <br><button class="form-button" type="submit" onclick="createFilm()">Add</button>
+        <label class="form-label" for="new-director">DIRECTOR</label><input placeholder="write the director..." class="form-input" id="new-director" type="text">
+        <br><button class="form-button" type="submit" onclick="createFilm()">ADD</button>
     </form>
 
     <!--<button onclick="printFilms()">View films</button>-->
     <!-- <button onclick="postFilm()">+</button> -->
     <section class="film-list" id="film-list">
     </section>
+
+    <footer>
+        <p>This is an exercise for study purpose.</p>
+        <p>Hope you guys like it, enjoy!</p>
+        <p>&copy; 2024 | My Films Library | powered by: Fatima & Leite.</p>
+    </footer>
     <script src="/src/service.js"></script>
 </body>
 </html>
