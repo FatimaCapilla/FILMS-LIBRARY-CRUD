@@ -23,3 +23,6 @@ To add a new film, fill in the 'film' and 'director' fields and click the 'Add' 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## Created by: <br>
+*Fatima Capilla and Leite*
