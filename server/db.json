@@ -1,16 +1,6 @@
 {
   "films": [
     {
-      "film": "Moonrise Kingdom",
-      "director": "Wes Anderson",
-      "id": "1"
-    },
-    {
-      "film": "Pulp fiction",
-      "director": "Quentin Tarantino",
-      "id": "2"
-    },
-    {
       "id": "907f",
       "film": "Mujeres al borde de un ataque de nervios",
       "director": "Pedro Almodovar"
@@ -21,7 +11,7 @@
       "director": "Todd Solondz"
     },
     {
-      "id": "b16d",
+      "id": "259f",
       "film": "Elisa y Marcela",
       "director": "Isabel Coixet"
     }

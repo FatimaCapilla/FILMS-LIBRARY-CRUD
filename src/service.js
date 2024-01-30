@@ -12,7 +12,9 @@ async function printFilms() {
         sectionTag.innerHTML +=
         `<h3>${film.film}</h3>
         <p>${film.director}</p>
+        <button onclick="editFilm('${film.id}')">Edit</button>
         <button onclick="deleteFilm('${film.id}')">Delete</button>`
+        
     })
 }
 
@@ -62,6 +64,8 @@ async function createFilm() {
 
 
 
+
+/*
 // La función editarUsuario permite al usuario editar la información de un usuario existente.
 async function editFilm(id) {
     // Se solicita al usuario ingresar la nueva información para el usuario.
@@ -88,3 +92,40 @@ async function editFilm(id) {
         console.error('Error al editar usuario.');
     }
 }
+
+*/
+
+/*
+
+// Función para editar una película mediante el formulario de edición
+async function editFilm(id) {
+    await filmEditForm(id);
+    const editForm = document.getElementById("edit-film-form");
+
+    // Mostrar el formulario de edición y ocultar el formulario de agregar
+    editForm.style.display = "block";
+    document.getElementById("films-form").style.display = "none";
+
+    // Agregar un evento al formulario de edición para manejar la actualización
+    editForm.onsubmit = async function(event) {
+        event.preventDefault();
+        await updateFilm(id, {
+            "film": editForm.elements[0].value,
+            "director": editForm.elements[1].value,
+        });
+        // Volver a imprimir la lista de películas después de la actualización
+        printFilms();
+
+        // Ocultar el formulario de edición y mostrar el formulario de agregar
+        editForm.style.display = "none";
+        document.getElementById("films-form").style.display = "block";
+    };
+}
+
+// Función para obtener los detalles de una película por su ID
+async function getFilmById(id) {
+    const result = await fetch(`http://localhost:3000/films/${id}`);
+    const data = await result.json();
+    return data;
+}
+*/
