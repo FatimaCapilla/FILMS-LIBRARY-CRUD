@@ -1,11 +1,6 @@
 {
   "films": [
     {
-      "film": "Moonrise Kingdom",
-      "director": "Wes Anderson",
-      "id": "1"
-    },
-    {
       "film": "Pulp fiction",
       "director": "Quentin Tarantino",
       "id": "2"
@@ -26,7 +21,7 @@
       "director": "Isabel Coixet"
     },
     {
-      "nombre": "Princesa Mononoke",
+      "film": "Princesa Mononoke ",
       "director": "Hayao Miyazaki",
       "id": "a70e"
     }

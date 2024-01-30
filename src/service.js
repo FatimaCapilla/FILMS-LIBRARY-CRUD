@@ -19,7 +19,7 @@ async function printFilms() {
         `<h3>${film.film}</h3>
         <p>${film.director}</p>
         <button onclick="deleteFilm('${film.id}')">Delete</button>
-        <button onclick="updateFilm('${film.id}')">Update Film</button>`
+        <button onclick="updateFilm('${film.id}')">Edit</button>`
     })
 }
 
@@ -66,6 +66,8 @@ async function createFilm() {
         body: JSON.stringify(newFilm),
     });
 }
+
+//METODO PUT U (update) del CRUD 
 // La función editarUsuario permite al usuario editar la información de una película existente.
 async function updateFilm(id) {
     // Se solicita al usuario ingresar la nueva información para la película.
