@@ -2,8 +2,14 @@
     align-items: center;
 }
 h1, h3 {
-    font-family: 'Sixtyfour', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
     color: #8048B9;
+}
+h1{
+    font-size: 5em;
+}
+h3 {
+    font-size: 1.6em;
 }
 .line {
     width: 20em;
@@ -21,11 +27,11 @@ h1, h3 {
     width: 20em;
     height: 10em;
     padding-left: 5em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 1em; 
+    padding-bottom: 1em; 
     background-color: #8048B9;
-    margin-top: 5%;
-    margin-bottom: 8%;
+    /* margin-top: 5%;
+    margin-bottom: 8%; */
     border-radius: 2em;
     box-shadow: 0 0 10px;
 }
@@ -40,25 +46,31 @@ h1, h3 {
 .form-input {
     padding: 2%;
     border: none;
-    border-radius: 1em;
+    border-radius: 0.5em;
+    color: #ff9215;
+    width: 17em;
 }
 
 .form-button {
     font-size: 15px;
     margin-top: 3%;
     padding: 2%;
-    background-color: #fff;
-    color: #ff9215;
-    border: none;
+    background-color: #ff9215;
+    color: #fff;
+    border-color: #ff9215;
     border-radius: 0.5em;
     cursor: pointer;
+    box-shadow: 0 0 10px;
+   margin-left: 12em;
 }
 
 .form-button:hover {
-    background-color: #ff9215;
+    background-color: #d2770e;
     color: #fff;
 }
-
+::placeholder {
+    color: #ff9215ad;
+}
 .film-list {
     display: flex;
     flex-direction: column;
