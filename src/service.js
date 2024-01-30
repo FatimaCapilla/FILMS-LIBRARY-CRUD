@@ -60,6 +60,12 @@ async function createFilm() {
         "director": formFilm.elements[1].value
     };
     
+// Validation
+    if (!newFilm.film || !newFilm.director) {
+        alert('Both film and director are required.');
+        return;
+    }
+
     const result = await fetch(`http://localhost:3000/films`, {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
