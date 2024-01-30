@@ -71,8 +71,8 @@ async function createFilm() {
 // La función editarUsuario permite al usuario editar la información de una película existente.
 async function updateFilm(id) {
     // Se solicita al usuario ingresar la nueva información para la película.
-    const newFilm = prompt('Ingrese la nueva película:');
-    const newDirector = prompt('Ingrese el nuevo director:');
+    const newFilm = prompt('Add the new film:');
+    const newDirector = prompt('Add the new director:');
 
     // Verificar si el usuario ha ingresado algo
     if (newFilm !== null && newDirector !== null) {
@@ -93,9 +93,9 @@ async function updateFilm(id) {
             printFilms();
         } else {
             // En caso de error, se muestra un mensaje en la consola.
-            console.error('Error al editar película.');
+            console.error('Error to edit film.');
         }
     } else {
-        console.error('El usuario canceló la operación.');
+        console.error('The user cancel the operation.');
     }
 }
