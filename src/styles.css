@@ -9,7 +9,9 @@ h1{
     font-size: 5em;
 }
 h3 {
+    color: #452763;
     font-size: 1.6em;
+    margin-bottom: 1%;
 }
 .line {
     width: 20em;
@@ -56,7 +58,7 @@ h3 {
     margin-top: 3%;
     padding: 2%;
     background-color: #ff9215;
-    color: #fff;
+    color: #452763;
     border-color: #ff9215;
     border-radius: 0.5em;
     cursor: pointer;
@@ -72,27 +74,33 @@ h3 {
     color: #ff9215ad;
 }
 .film-list {
+    margin-top: 3%;
+    border-radius: 2em;
+    box-shadow: 0 0 10px;
+    width: 25em;
     display: flex;
     flex-direction: column;
-    /* max-width: 30em; */
     text-align: center;
+    background-color: #8048B9;
 }
 
 .film-button button {
-    background-color: #8048B9;
-    color: #fff;
+    background-color: #452564;
+    color: #ff9215;
     font-size: 15px;
     width: 5.5em;
     padding: 1.5%;
     margin: 0.5%;
     border-radius: 0.5em;
-    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px;
 }
 
 .film-button button:hover {
     background-color: #ff9215;
-    color: #fff;
+    color: #452564;
     cursor: pointer;
+    box-shadow: 0 0 10px;
 }
 
 
