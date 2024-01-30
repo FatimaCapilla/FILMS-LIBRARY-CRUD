@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
     <title>Document</title>
 </head>
-<body>
-    <form id="films-form">
-        <label for="new-film">Film</label><input id="new-film" type="text">
+<body class="films-form">
+    <h1>MY FILMS</h1>
+    <form class="form-group" id="films-form">
+        <label class="form-label" for="new-film">Film</label><input placeholder="write the film..."  class="form-input" id="new-film" type="text">
         <br>
-        <label for="new-director">Director</label><input id="new-director" type="text">
-        <button type="submit" onclick="createFilm()">To add</button>
+        <label class="form-label" for="new-director">Director</label><input placeholder="write the director..." class="form-input" id="new-director" type="text">
+        <br><button class="form-button" type="submit" onclick="createFilm()">Add</button>
     </form>
 
-    </form>
     <!--<button onclick="printFilms()">View films</button>-->
     <!-- <button onclick="postFilm()">+</button> -->
-    <section id="film-list">
+    <section class="film-list" id="film-list">
     </section>
     <script src="/src/service.js"></script>
 </body>

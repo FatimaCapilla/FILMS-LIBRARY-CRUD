@@ -18,8 +18,8 @@ async function printFilms() {
         sectionTag.innerHTML +=
         `<h3>${film.film}</h3>
         <p>${film.director}</p>
-        <button onclick="deleteFilm('${film.id}')">Delete</button>
-        <button onclick="updateFilm('${film.id}')">Edit</button>`
+        <div class="film-button"><button onclick="deleteFilm('${film.id}')">Delete</button>
+        <button onclick="updateFilm('${film.id}')">Edit</button><hr></div>`
     })
 }
 

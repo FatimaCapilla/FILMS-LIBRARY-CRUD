@@ -1,0 +1,76 @@
+
+.films-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+}
+
+.form-group {
+    width: 20em;
+    height: 10em;
+    padding-left: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #8048B9;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    border-radius: 2em;
+    box-shadow: 0 0 10px;
+}
+
+.form-label {
+    color: #ff9215;
+    display: flex;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.form-input {
+    padding: 2%;
+    border: none;
+    border-radius: 1em;
+}
+
+.form-button {
+    font-size: 15px;
+    margin-top: 3%;
+    padding: 2%;
+    background-color: #fff;
+    color: #ff9215;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #ff9215;
+    color: #fff;
+}
+
+.film-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 30em;
+}
+
+.film-button button {
+    background-color: #8048B9;
+    color: #fff;
+    font-size: 15px;
+    width: 5.5em;
+    padding: 1.5%;
+    margin: 0.5%;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.film-button button:hover {
+    background-color: #ff9215;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* Morado: #8048B9
+Naranja: #F48605
+Amarillo: #FFF7B4 */

@@ -1,7 +1,7 @@
 {
   "films": [
     {
-      "film": "Pulp fiction",
+      "film": "Pulp Fiction",
       "director": "Quentin Tarantino",
       "id": "2"
     },
@@ -21,9 +21,9 @@
       "director": "Isabel Coixet"
     },
     {
-      "film": "Princesa Mononoke ",
-      "director": "Hayao Miyazaki",
-      "id": "a70e"
+      "id": "1d5b",
+      "film": "Mononoke Princess",
+      "director": "Hayao Miyazaki"
     }
   ]
 }
