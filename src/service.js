@@ -19,7 +19,7 @@ async function printFilms() {
         `<h3>${film.film}</h3>
         <p>${film.director}</p>
         <div class="film-button"><button onclick="deleteFilm('${film.id}')">Delete</button>
-        <button onclick="updateFilm('${film.id}')">Edit</button><hr></div>`
+        <button onclick="updateFilm('${film.id}')">Edit</button><hr class="line"></div>`
     })
 }
 

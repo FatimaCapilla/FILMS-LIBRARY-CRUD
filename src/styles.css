@@ -1,8 +1,20 @@
-
+*{
+    align-items: center;
+}
+h1, h3 {
+    font-family: 'Sixtyfour', sans-serif;
+    color: #8048B9;
+}
+.line {
+    width: 20em;
+    border-color: #ff9215;
+}
 .films-form {
     display: flex;
     flex-direction: column;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+    font-family: 'Roboto', sans-serif;
+    color: #ff9215;
 }
 
 .form-group {
@@ -50,7 +62,8 @@
 .film-list {
     display: flex;
     flex-direction: column;
-    max-width: 30em;
+    /* max-width: 30em; */
+    text-align: center;
 }
 
 .film-button button {
