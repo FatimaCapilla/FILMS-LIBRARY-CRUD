@@ -33,25 +33,6 @@ async function deleteFilm(id) {
     return result
 }
 
-//Método POST C (create) del CRUD
-// async function postFilm() {
-//     const newFilm = {
-//         "film": "Wellcome to the doll house",
-//         "director": "Todd Solondz"
-//     }
-
-//     const options = {
-//         method: 'POST',
-//         headers: {
-//         'Content-Type': 'application/json',
-//         },
-//         body: JSON.stringify(newFilm),
-//         };
-//     const result = await fetch(`http://localhost:3000/films`, options)
-//     return result
-
-// }
-
 //Método POST C (create) del CRUD con formulario
 async function createFilm() {
     const formFilm = document.getElementById("films-form")
@@ -59,6 +40,19 @@ async function createFilm() {
         "film": formFilm.elements[0].value,
         "director": formFilm.elements[1].value
     };
+
+// Validation
+    if (!newFilm.film || !newFilm.director) {
+        alert('Both film and director are required.');
+        return;
+    }
+    
+// New validation for director
+    const regex = /^[A-Za-z\s]+$/;
+    if (!regex.test(newFilm.director)) {
+        alert('Director name can only contain letters.');
+        return;
+        }
     
     const result = await fetch(`http://localhost:3000/films`, {
         method: "POST",
