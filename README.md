@@ -12,7 +12,7 @@ This project is a simple CRUD (Create, Read, Update, Delete) application for man
 ## Installation
 
 1. Clone this repository `git clone https://github.com/FatimaCapilla/films-library-crud.git`
-2. Install the dependencies with `npm init -y`.
+2. Enter in the folder project `cd films-library-crud`.
 3. Start the server with `npm install`.
 4. Start the API with `npm run api`.
 
